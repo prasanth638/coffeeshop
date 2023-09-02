@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Poppins:ital@0;1&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+        }body{
+            background: linear-gradient(to right,rgb(0, 0, 0),rgb(69, 68, 68));
+           
+
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }.container{
+            color: rgb(255, 255, 255);
+            width: 30%;
+            height: 70vh;
+            margin-top: 120px;
+            transition: 2s;
+            border-radius: 10px;
+            background-color:rgba(255, 255, 255,.2);
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.8), -2px -2px 2px rgb(255, 253, 253,.2);
+            animation: mymove;
+        }
+        input{
+            background:none;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255,.5);
+            border-radius: 2px;
+        }label{
+            
+        }.pass{
+            display: flex;
+            padding-top: 10px;
+            font-size: 11px;
+            text-decoration: none;
+            margin-left: 25%;
+        }h1{
+           margin-top: -10px;
+           font-weight: 800;
+           margin-bottom: 30px;
+        }button{
+            border-radius: 10px;
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.8), -2px -2px 2px rgb(255, 253, 253,.2);
+            background-color:rgb(46, 113, 246) ;
+            margin-left: 25%;
+            width: 100px;
+            border: none;
+            margin-top: 20px;
+        }p{
+            font-size: 14px;
+            margin-top: 6px;
+
+        }
+        .pass:hover{
+            display: flex;
+            padding-top: 10px;
+            font-size: 11px;
+            text-decoration: none;
+            margin-left: 25%;
+            color: black;
+        }input:hover{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            box-shadow:0px 2px 0.1px rgba(0, 0, 0, 0.3) ;
+        }.container:hover{
+            color: rgb(0, 0, 0);
+            width: 30%;
+            height: 70vh;
+            margin-top: 120px;
+            border-radius: 40px;
+            background-color:rgba(255, 255, 255,.6);
+            transition: 2s;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), -5px -5px 2px rgba(193, 21, 21, 0.6);
+        }body:hover{
+            background: linear-gradient(to right,rgb(0, 0, 0),rgb(69, 68, 68));
+            transition: 2s;
+
+        }
+        button:hover{
+            border-radius: 10px;
+            box-shadow: 5px 5px 6px rgba(127, 15, 15, 0.8), -2px -2px 2px rgba(0, 0, 0, 0.2);
+            background-color:rgb(0, 0, 0) ;
+            margin-left: 25%;
+            width: 100px;
+            border: none;
+            margin-top: 20px;
+            color: white;
+            transition: 1s;
+            
+        }h1:hover{
+                font-size: 50px;
+                transition: 1s;
+            }@media screen and (max-width:1000px){
+            .container:hover{
+            color: rgb(0, 0, 0);
+            width: 50%;
+            height: 70vh;
+            margin-top: 120px;
+            border-radius: 40px;
+            background-color:rgba(255, 255, 255,.6);
+            transition: 2s;
+            transition: 2s;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), -5px -5px 2px rgba(193, 21, 21, 0.6);
+        }.container{
+            color: rgb(255, 255, 255);
+            width: 50%;
+            height: 70vh;
+            margin-top: 120px;
+            transition: 2s;
+            border-radius: 10px;
+            background-color:rgba(255, 255, 255,.2);
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.8), -2px -2px 2px rgb(255, 253, 253,.2);
+        }
+                
+        }@media screen and (max-width:500px){
+            .container{
+            color: rgb(0, 0, 0);
+            width: 60%;
+            height: 70vh;
+            margin-top: 120px;
+            transition: 2s;
+            border-radius: 10px;
+            background-color:rgba(255, 255, 255,.6);
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.8), -2px -2px 2px rgb(255, 253, 253,.2);
+            animation: mymove;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 12px;
+        }.container:hover{
+            color: rgb(0, 0, 0);
+            width: 60%;
+            height: 70vh;
+            margin-top: 120px;
+            border-radius: 40px;
+            background-color:rgba(255, 255, 255,.6);
+            transition: 2s;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), -5px -5px 2px rgba(193, 21, 21, 0.6);
+        } input{
+            background:none;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255,.5);
+            border-radius: 2px;
+            width: 150px;
+        }p{
+            font-size: 11px;
+            margin-top: 6px;
+
+        }button{
+            border-radius: 10px;
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.8), -2px -2px 2px rgb(255, 253, 253,.2);
+            background-color:rgb(46, 113, 246) ;
+            margin-left: 25%;
+            width: 70px;
+            border: none;
+            margin-top: 20px;
+        } button:hover{
+            border-radius: 10px;
+            box-shadow: 5px 5px 6px rgba(127, 15, 15, 0.8), -2px -2px 2px rgba(0, 0, 0, 0.2);
+            background-color:rgb(0, 0, 0) ;
+            margin-left: 25%;
+            width: 70px;
+            border: none;
+            margin-top: 20px;
+            color: white;
+            transition: 1s;
+            
+        }h1{
+           margin-top: -10px;
+           font-weight: 800;
+           margin-bottom: 30px;
+           font-size: 25px;
+        }h1:hover{
+                font-size: 35px;
+                transition: 1s;
+            }
+        }
+      </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>log in</h1>
+        <form action="">
+        <label>user name :</label><br>
+        <input class="form-label" type="text"><br>
+        <label for="">password :</label><br>
+        <input  id=""type="password"><br>
+        <a href="" class="pass">Forgot password</a>
+        <p>Don't have account <a href="">sign up</a></p>
+        <button>sign in</button>
+    </form>
+
+    </div>
+    
+</body>
+</html>
